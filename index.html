@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website for Aw Ming Jie, a cybersecurity student focused on cloud security, SOC operations, and digital forensics.">
+  <title>Aw Ming Jie | Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Aw Ming Jie home">
+        <span class="brand-mark" aria-hidden="true">AMJ</span>
+        <span>Aw Ming Jie</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+        <span class="nav-toggle-line" aria-hidden="true"></span>
+        <span class="nav-toggle-line" aria-hidden="true"></span>
+        <span class="nav-toggle-line" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </button>
+
+      <div class="nav-links" id="primary-menu" data-nav-menu>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="threat-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Cloud Security / SOC Operations / Digital Forensics</p>
+          <h1 id="hero-title">Aw Ming Jie</h1>
+          <p class="hero-lead">
+            Cybersecurity student with hands-on experience in SOC workflows and SIEM deployment, complemented by specialized training in AWS cloud security. I focus on building systems that are secure by design, cloud-optimized, and resilient under real-world conditions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="mailto:awmj321@gmail.com">Email me</a>
+          </div>
+        </div>
+
+        <aside class="signal-panel reveal" aria-label="Cybersecurity focus dashboard">
+          <div class="signal-header">
+            <span class="signal-dot"></span>
+            <span>security profile</span>
+          </div>
+          <dl class="signal-list">
+            <div>
+              <dt>Specialization</dt>
+              <dd>Cloud Security</dd>
+            </div>
+            <div>
+              <dt>Current Program</dt>
+              <dd>Diploma in Cybersecurity and Digital Forensics</dd>
+            </div>
+            <div>
+              <dt>Academic Record</dt>
+              <dd>GPA 3.37</dd>
+            </div>
+            <div>
+              <dt>Expected Graduation</dt>
+              <dd>2027</dd>
+            </div>
+          </dl>
+          <div class="terminal-lines" aria-hidden="true">
+            <span>&gt; siem.watch --feeds ioc</span>
+            <span>&gt; aws.audit --iam --vpc</span>
+            <span>&gt; response.playbook ready</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="about" aria-labelledby="about-title">
+      <div class="section-inner two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Security-minded, cloud-focused, and practical.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p>
+            I am seeking opportunities to apply my technical skills and proactive mindset to real-world security challenges. My experience spans SOC simulations, SIEM tooling, cloud architecture, ethical hacking, and technical documentation.
+          </p>
+          <p>
+            Alongside academic work, I have earned scholarship recognition for outstanding academic performance and contributed to cybersecurity awareness through a community workshop at Pathlight School.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Academic foundation</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">Apr 2024 - Present</div>
+              <h3>Ngee Ann Polytechnic</h3>
+              <p class="item-subtitle">Diploma in Cybersecurity and Digital Forensics</p>
+              <ul>
+                <li>Specialising in Cloud Security.</li>
+                <li>Expected to graduate in 2027.</li>
+                <li>Relevant modules include Cybersecurity Operations and Threat Intelligence, Ethical Hacking, Cloud Architecture and Technologies, Cloud Security Tools and Technologies, and Cloud Native Architecture Security.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta">Jan 2020 - Dec 2023</div>
+              <h3>Whitley Secondary School</h3>
+              <p class="item-subtitle">GCE O Level Certificate</p>
+              <ul>
+                <li>L1R5: 17.</li>
+                <li>Balanced academic work with CCA commitments and school representation.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Key Projects</p>
+          <h2 id="projects-title">Applied security and cloud work</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-kicker">School Project</div>
+            <h3>AWS Cloud Architecture and Serverless Implementation</h3>
+            <p>
+              Designed and deployed a highly available AWS VPC architecture for a .NET Core 6.0 web application, with auto scaling, monitoring, alerts, and serverless data workflows.
+            </p>
+            <ul class="project-points">
+              <li>Used EC2, ELB, Auto Scaling Groups, CloudWatch, SNS, Lambda, API Gateway, DynamoDB, and S3.</li>
+              <li>Built dashboards and alerts for CPU utilization, network traffic, and instance health.</li>
+              <li>Applied AWS Well-Architected Framework principles through documented decisions, failover testing, and load testing.</li>
+            </ul>
+            <div class="tag-row" aria-label="Project technologies">
+              <span>AWS</span>
+              <span>Serverless</span>
+              <span>Monitoring</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-kicker">School Project</div>
+            <h3>Ethical Hacking and Penetration Testing</h3>
+            <p>
+              Conducted a simulated wireless penetration test on a Windows Server environment using Kali Linux and Metasploit.
+            </p>
+            <ul class="project-points">
+              <li>Identified critical vulnerabilities in network configuration.</li>
+              <li>Documented mitigation strategies to improve server security.</li>
+              <li>Strengthened practical understanding of exploitation techniques and security hardening.</li>
+            </ul>
+            <div class="tag-row" aria-label="Project technologies">
+              <span>Kali Linux</span>
+              <span>Metasploit</span>
+              <span>Hardening</span>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-kicker">Cybersecurity Operations Module</div>
+            <h3>Security Operations Centre Simulation</h3>
+            <p>
+              Deployed and configured SIEM tooling to monitor network traffic, detect potential security incidents, and practice incident response workflows.
+            </p>
+            <ul class="project-points">
+              <li>Analysed threat intelligence feeds and indicators of compromise.</li>
+              <li>Practiced log analysis and escalation procedures.</li>
+              <li>Collaborated in a group setting to simulate real-world SOC operations.</li>
+            </ul>
+            <div class="tag-row" aria-label="Project technologies">
+              <span>SIEM</span>
+              <span>Threat Intel</span>
+              <span>Incident Response</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Technical coverage</h2>
+        </div>
+
+        <div class="skill-controls reveal" role="tablist" aria-label="Skill categories">
+          <button class="skill-filter is-active" type="button" role="tab" aria-selected="true" data-filter="all">All</button>
+          <button class="skill-filter" type="button" role="tab" aria-selected="false" data-filter="cloud">Cloud</button>
+          <button class="skill-filter" type="button" role="tab" aria-selected="false" data-filter="security">Security</button>
+          <button class="skill-filter" type="button" role="tab" aria-selected="false" data-filter="code">Code</button>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-category="cloud">
+            <h3>Cloud Platforms and Services</h3>
+            <p>AWS EC2, VPC, S3, RDS, Lambda, IAM, CloudWatch, and API Gateway.</p>
+          </article>
+          <article class="skill-card reveal" data-category="cloud">
+            <h3>Cloud Architecture and Security</h3>
+            <p>AWS Well-Architected Framework, serverless architecture, cloud monitoring, alerting, network segmentation, cost optimization, and infrastructure resilience.</p>
+          </article>
+          <article class="skill-card reveal" data-category="security">
+            <h3>Security Tools and Operating Systems</h3>
+            <p>SIEM with Splunk and Wazuh, Wireshark, Nmap, Palo Alto Firewall, Burp Suite, Windows, Kali Linux, and Ubuntu.</p>
+          </article>
+          <article class="skill-card reveal" data-category="security">
+            <h3>Cloud Security Practices</h3>
+            <p>DevSecOps fundamentals, container security basics, cloud IAM, and data encryption.</p>
+          </article>
+          <article class="skill-card reveal" data-category="code">
+            <h3>Programming and Scripting</h3>
+            <p>Python, Bash, JavaScript, and C#.</p>
+          </article>
+          <article class="skill-card reveal" data-category="security">
+            <h3>Security Methodologies</h3>
+            <p>Threat intelligence, vulnerability assessment, SOC operations, and technical documentation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recognition-section" aria-labelledby="recognition-title">
+      <div class="section-inner two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Recognition</p>
+          <h2 id="recognition-title">Achievements and certifications</h2>
+        </div>
+        <div class="recognition-list reveal">
+          <article>
+            <h3>Nanyang Hwu Clan General Association Polytechnic Scholarship</h3>
+            <p>Nov 2025 - Awarded for outstanding academic performance.</p>
+          </article>
+          <article>
+            <h3>Pathlight School Cyberbullying Workshop</h3>
+            <p>May 2025 - Recognized for contributing to a cybersecurity awareness workshop for students.</p>
+          </article>
+          <article>
+            <h3>LinkedIn Learning Certifications</h3>
+            <p>Using Generative AI to Secure the Network, Burp Suite Essential Training, and C#: Applied Data Structures.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Open to cybersecurity opportunities and collaborations.</h2>
+        </div>
+        <div class="contact-actions reveal">
+          <a class="button button-primary" href="mailto:awmj321@gmail.com">awmj321@gmail.com</a>
+          <p>Available for internships, student projects, and security-focused collaboration.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span data-year></span> Aw Ming Jie. Built as a responsive cybersecurity portfolio.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

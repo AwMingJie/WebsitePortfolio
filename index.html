@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en-SG">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio website for Aw Ming Jie, a cybersecurity student focused on cloud security, SOC operations, and digital forensics.">
-  <title>Aw Ming Jie | Cybersecurity Portfolio</title>
+  <meta name="description" content="Aw Ming Jie's cybersecurity portfolio, featuring hands-on projects in AWS cloud security, SOC operations, SIEM, ethical hacking, and digital forensics.">
+  <meta name="author" content="Aw Ming Jie">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#090a0a">
+  <meta name="color-scheme" content="dark">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_SG">
+  <meta property="og:site_name" content="Aw Ming Jie">
+  <meta property="og:title" content="Aw Ming Jie | Cloud Security &amp; SOC Portfolio">
+  <meta property="og:description" content="Hands-on work in AWS cloud security, SOC operations, SIEM, ethical hacking, and digital forensics.">
+  <meta property="og:image" content="assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aw Ming Jie - evidence-first cybersecurity portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aw Ming Jie | Cloud Security &amp; SOC Portfolio">
+  <meta name="twitter:description" content="Hands-on work in AWS cloud security, SOC operations, SIEM, ethical hacking, and digital forensics.">
+  <meta name="twitter:image" content="assets/og.png">
+  <meta name="twitter:image:alt" content="Aw Ming Jie - evidence-first cybersecurity portfolio">
+  <title>Aw Ming Jie | Cloud Security &amp; SOC Portfolio</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/favicon.png">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Aw Ming Jie","jobTitle":"Cybersecurity Student","email":"mailto:awmj321@gmail.com","sameAs":["https://www.linkedin.com/in/ming-jie-aw"],"affiliation":{"@type":"CollegeOrUniversity","name":"Ngee Ann Polytechnic"},"knowsAbout":["Cloud security","Security operations","Digital forensics","AWS","SIEM"]}</script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -25,10 +47,11 @@
       </button>
 
       <div class="nav-links" id="primary-menu" data-nav-menu>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#recognition">Recognition</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -39,99 +62,83 @@
       <canvas id="threat-canvas" aria-hidden="true"></canvas>
       <div class="hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow">Cloud Security / SOC Operations / Digital Forensics</p>
-          <h1 id="hero-title">Aw Ming Jie</h1>
-          <p class="hero-lead">
-            Cybersecurity student with hands-on experience in SOC workflows and SIEM deployment, complemented by specialized training in AWS cloud security. I focus on building systems that are secure by design, cloud-optimized, and resilient under real-world conditions.
+          <p class="eyebrow">Cybersecurity student / Cloud Security specialisation</p>
+          <p class="availability-line">
+            <span class="availability-dot" aria-hidden="true"></span>
+            Open to cybersecurity internships and collaborations
           </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View projects</a>
-            <a class="button button-secondary" href="mailto:awmj321@gmail.com">Email me</a>
+          <h1 id="hero-title">Aw Ming Jie</h1>
+          <p class="hero-role">Practical work across cloud security, SOC operations, and security testing.</p>
+          <p class="hero-lead">
+            I am pursuing a Diploma in Cybersecurity and Digital Forensics at Ngee Ann Polytechnic. My project work covers AWS cloud architecture, SIEM-based SOC workflows, and simulated penetration testing.
+          </p>
+          <div class="hero-actions" role="group" aria-label="Portfolio actions">
+            <a class="button button-primary" href="#projects">Explore case studies</a>
+            <a class="button button-secondary" href="assets/aw-ming-jie-resume.pdf" download>Download résumé</a>
+            <a class="button button-quiet" href="https://www.linkedin.com/in/ming-jie-aw" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
 
-        <aside class="signal-panel reveal" aria-label="Cybersecurity focus dashboard">
+        <aside class="signal-panel reveal" aria-label="Evidence snapshot">
           <div class="signal-header">
-            <span class="signal-dot"></span>
-            <span>security profile</span>
+            <span class="signal-dot" aria-hidden="true"></span>
+            <span>Evidence snapshot</span>
           </div>
           <dl class="signal-list">
             <div>
-              <dt>Specialization</dt>
-              <dd>Cloud Security</dd>
+              <dt>Primary focus</dt>
+              <dd>Cloud Security &amp; SOC Operations</dd>
             </div>
             <div>
-              <dt>Current Program</dt>
-              <dd>Diploma in Cybersecurity and Digital Forensics</dd>
+              <dt>Case studies</dt>
+              <dd>3 documented projects</dd>
             </div>
             <div>
-              <dt>Academic Record</dt>
+              <dt>Academic record</dt>
               <dd>GPA 3.37</dd>
             </div>
             <div>
-              <dt>Expected Graduation</dt>
-              <dd>2027</dd>
+              <dt>Graduation</dt>
+              <dd>Expected 2027</dd>
             </div>
           </dl>
           <div class="terminal-lines" aria-hidden="true">
-            <span>&gt; siem.watch --feeds ioc</span>
-            <span>&gt; aws.audit --iam --vpc</span>
-            <span>&gt; response.playbook ready</span>
+            <span>&gt; evidence.list --projects 3</span>
+            <span>&gt; availability --internships open</span>
+            <span>&gt; profile --linkedin verified</span>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section intro-section" id="about" aria-labelledby="about-title">
-      <div class="section-inner two-column">
-        <div class="section-heading reveal">
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">Security-minded, cloud-focused, and practical.</h2>
-        </div>
-        <div class="section-copy reveal">
-          <p>
-            I am seeking opportunities to apply my technical skills and proactive mindset to real-world security challenges. My experience spans SOC simulations, SIEM tooling, cloud architecture, ethical hacking, and technical documentation.
-          </p>
-          <p>
-            Alongside academic work, I have earned scholarship recognition for outstanding academic performance and contributed to cybersecurity awareness through a community workshop at Pathlight School.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="education" aria-labelledby="education-title">
+    <section class="section proof-section" id="evidence" aria-labelledby="evidence-title">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Education</p>
-          <h2 id="education-title">Academic foundation</h2>
+        <div class="section-heading section-heading-wide reveal">
+          <p class="eyebrow">Evidence at a glance</p>
+          <h2 id="evidence-title">Work that goes beyond a tools list.</h2>
+          <p class="section-intro">Selected evidence from diploma projects, academic recognition, and community involvement.</p>
         </div>
 
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-meta">Apr 2024 - Present</div>
-              <h3>Ngee Ann Polytechnic</h3>
-              <p class="item-subtitle">Diploma in Cybersecurity and Digital Forensics</p>
-              <ul>
-                <li>Specialising in Cloud Security.</li>
-                <li>Expected to graduate in 2027.</li>
-                <li>Relevant modules include Cybersecurity Operations and Threat Intelligence, Ethical Hacking, Cloud Architecture and Technologies, Cloud Security Tools and Technologies, and Cloud Native Architecture Security.</li>
-              </ul>
-            </div>
+        <div class="proof-grid">
+          <article class="proof-card reveal">
+            <span class="proof-index" aria-hidden="true">01</span>
+            <h3>Cloud architecture</h3>
+            <p>Deployed an AWS architecture for a .NET Core 6.0 application with load balancing, auto scaling, monitoring, alerts, and serverless workflows.</p>
           </article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-content">
-              <div class="timeline-meta">Jan 2020 - Dec 2023</div>
-              <h3>Whitley Secondary School</h3>
-              <p class="item-subtitle">GCE O Level Certificate</p>
-              <ul>
-                <li>L1R5: 17.</li>
-                <li>Balanced academic work with CCA commitments and school representation.</li>
-              </ul>
-            </div>
+          <article class="proof-card reveal">
+            <span class="proof-index" aria-hidden="true">02</span>
+            <h3>Security operations</h3>
+            <p>Configured SIEM tooling, analysed threat intelligence and IoCs, and practised log analysis and incident response in a group SOC simulation.</p>
+          </article>
+          <article class="proof-card reveal">
+            <span class="proof-index" aria-hidden="true">03</span>
+            <h3>Security testing</h3>
+            <p>Conducted a simulated wireless penetration test in an authorised school environment and documented mitigation strategies.</p>
+          </article>
+          <article class="proof-card reveal">
+            <span class="proof-index" aria-hidden="true">04</span>
+            <h3>Academic recognition</h3>
+            <p>Specialising in Cloud Security, with a GPA of 3.37 and a 2025 polytechnic scholarship for outstanding academic performance.</p>
           </article>
         </div>
       </div>
@@ -139,64 +146,53 @@
 
     <section class="section projects-section" id="projects" aria-labelledby="projects-title">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Key Projects</p>
-          <h2 id="projects-title">Applied security and cloud work</h2>
+        <div class="section-heading section-heading-wide reveal">
+          <p class="eyebrow">Featured case studies</p>
+          <h2 id="projects-title">Three projects, documented beyond the tool list.</h2>
+          <p class="section-intro">Each case study separates the challenge, my contribution, implementation, validation, and evidence boundaries.</p>
         </div>
 
         <div class="project-grid">
           <article class="project-card reveal">
-            <div class="project-kicker">School Project</div>
-            <h3>AWS Cloud Architecture and Serverless Implementation</h3>
-            <p>
-              Designed and deployed a highly available AWS VPC architecture for a .NET Core 6.0 web application, with auto scaling, monitoring, alerts, and serverless data workflows.
-            </p>
-            <ul class="project-points">
-              <li>Used EC2, ELB, Auto Scaling Groups, CloudWatch, SNS, Lambda, API Gateway, DynamoDB, and S3.</li>
-              <li>Built dashboards and alerts for CPU utilization, network traffic, and instance health.</li>
-              <li>Applied AWS Well-Architected Framework principles through documented decisions, failover testing, and load testing.</li>
-            </ul>
-            <div class="tag-row" aria-label="Project technologies">
-              <span>AWS</span>
-              <span>Serverless</span>
-              <span>Monitoring</span>
+            <div class="project-kicker">School Project / AWS Cloud Architecture</div>
+            <h3>Highly available AWS architecture and serverless workflows</h3>
+            <p>Designed and deployed an AWS architecture for a .NET Core 6.0 application, then added monitoring, alerts, and serverless data and image workflows.</p>
+            <dl class="project-facts">
+              <div><dt>Scope</dt><dd>Architecture, deployment, monitoring, automation</dd></div>
+              <div><dt>Validation</dt><dd>Failover and load testing</dd></div>
+            </dl>
+            <div class="tag-row" role="group" aria-label="AWS project technologies">
+              <span>AWS</span><span>Serverless</span><span>Monitoring</span>
             </div>
+            <a class="card-link" href="projects/aws-cloud-architecture.html">Read AWS case study <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-kicker">School Project</div>
-            <h3>Ethical Hacking and Penetration Testing</h3>
-            <p>
-              Conducted a simulated wireless penetration test on a Windows Server environment using Kali Linux and Metasploit.
-            </p>
-            <ul class="project-points">
-              <li>Identified critical vulnerabilities in network configuration.</li>
-              <li>Documented mitigation strategies to improve server security.</li>
-              <li>Strengthened practical understanding of exploitation techniques and security hardening.</li>
-            </ul>
-            <div class="tag-row" aria-label="Project technologies">
-              <span>Kali Linux</span>
-              <span>Metasploit</span>
-              <span>Hardening</span>
+            <div class="project-kicker">School Project / Ethical Hacking</div>
+            <h3>Simulated wireless penetration test and server hardening</h3>
+            <p>Assessed a Windows Server environment in a controlled school simulation using Kali Linux and Metasploit, then documented mitigations.</p>
+            <dl class="project-facts">
+              <div><dt>Scope</dt><dd>Authorised educational environment</dd></div>
+              <div><dt>Output</dt><dd>Findings and mitigation guidance</dd></div>
+            </dl>
+            <div class="tag-row" role="group" aria-label="Ethical hacking project technologies">
+              <span>Kali Linux</span><span>Metasploit</span><span>Hardening</span>
             </div>
+            <a class="card-link" href="projects/ethical-hacking-lab.html">Read security testing case study <span aria-hidden="true">→</span></a>
           </article>
 
           <article class="project-card reveal">
-            <div class="project-kicker">Cybersecurity Operations Module</div>
-            <h3>Security Operations Centre Simulation</h3>
-            <p>
-              Deployed and configured SIEM tooling to monitor network traffic, detect potential security incidents, and practice incident response workflows.
-            </p>
-            <ul class="project-points">
-              <li>Analysed threat intelligence feeds and indicators of compromise.</li>
-              <li>Practiced log analysis and escalation procedures.</li>
-              <li>Collaborated in a group setting to simulate real-world SOC operations.</li>
-            </ul>
-            <div class="tag-row" aria-label="Project technologies">
-              <span>SIEM</span>
-              <span>Threat Intel</span>
-              <span>Incident Response</span>
+            <div class="project-kicker">Cybersecurity Operations / Group Simulation</div>
+            <h3>Security Operations Centre simulation</h3>
+            <p>Deployed and configured SIEM tooling, then used threat intelligence, IoCs, and log analysis to practise incident-response workflows.</p>
+            <dl class="project-facts">
+              <div><dt>Scope</dt><dd>Monitoring, analysis, escalation, response</dd></div>
+              <div><dt>Mode</dt><dd>Collaborative module simulation</dd></div>
+            </dl>
+            <div class="tag-row" role="group" aria-label="SOC project technologies">
+              <span>SIEM</span><span>Threat Intelligence</span><span>Incident Response</span>
             </div>
+            <a class="card-link" href="projects/soc-simulation.html">Read SOC case study <span aria-hidden="true">→</span></a>
           </article>
         </div>
       </div>
@@ -204,65 +200,148 @@
 
     <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="section-inner">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Skills</p>
-          <h2 id="skills-title">Technical coverage</h2>
+        <div class="section-heading section-heading-wide reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2 id="skills-title">Skills connected to evidence.</h2>
+          <p class="section-intro">Filter by area, then follow the evidence link to see where the capability was applied.</p>
         </div>
 
-        <div class="skill-controls reveal" role="tablist" aria-label="Skill categories">
-          <button class="skill-filter is-active" type="button" role="tab" aria-selected="true" data-filter="all">All</button>
-          <button class="skill-filter" type="button" role="tab" aria-selected="false" data-filter="cloud">Cloud</button>
-          <button class="skill-filter" type="button" role="tab" aria-selected="false" data-filter="security">Security</button>
-          <button class="skill-filter" type="button" role="tab" aria-selected="false" data-filter="code">Code</button>
+        <div class="skill-controls reveal" role="group" aria-label="Filter skills by category">
+          <button class="skill-filter is-active" type="button" aria-pressed="true" data-filter="all">All</button>
+          <button class="skill-filter" type="button" aria-pressed="false" data-filter="cloud">Cloud</button>
+          <button class="skill-filter" type="button" aria-pressed="false" data-filter="security">Security</button>
+          <button class="skill-filter" type="button" aria-pressed="false" data-filter="code">Code</button>
         </div>
+        <p class="skill-status reveal" data-skill-status aria-live="polite">Showing all six capability areas.</p>
 
-        <div class="skills-grid">
+        <div class="skills-grid" id="skills-grid">
           <article class="skill-card reveal" data-category="cloud">
-            <h3>Cloud Platforms and Services</h3>
-            <p>AWS EC2, VPC, S3, RDS, Lambda, IAM, CloudWatch, and API Gateway.</p>
+            <h3>AWS architecture</h3>
+            <p>EC2, VPC, S3, RDS, Lambda, IAM, CloudWatch, API Gateway, load balancing, auto scaling, monitoring, and alerting.</p>
+            <a class="evidence-link" href="projects/aws-cloud-architecture.html">Evidence: AWS case study</a>
           </article>
-          <article class="skill-card reveal" data-category="cloud">
-            <h3>Cloud Architecture and Security</h3>
-            <p>AWS Well-Architected Framework, serverless architecture, cloud monitoring, alerting, network segmentation, cost optimization, and infrastructure resilience.</p>
+          <article class="skill-card reveal" data-category="cloud security">
+            <h3>Cloud security practices</h3>
+            <p>AWS Well-Architected Framework, network segmentation, cloud IAM, data encryption, DevSecOps fundamentals, and container security basics.</p>
+            <a class="evidence-link" href="projects/aws-cloud-architecture.html">Evidence: architecture decisions</a>
           </article>
           <article class="skill-card reveal" data-category="security">
-            <h3>Security Tools and Operating Systems</h3>
-            <p>SIEM with Splunk and Wazuh, Wireshark, Nmap, Palo Alto Firewall, Burp Suite, Windows, Kali Linux, and Ubuntu.</p>
+            <h3>Detection and response</h3>
+            <p>SIEM, threat intelligence, indicators of compromise, log analysis, escalation, and incident-response workflows.</p>
+            <a class="evidence-link" href="projects/soc-simulation.html">Evidence: SOC simulation</a>
           </article>
           <article class="skill-card reveal" data-category="security">
-            <h3>Cloud Security Practices</h3>
-            <p>DevSecOps fundamentals, container security basics, cloud IAM, and data encryption.</p>
+            <h3>Security assessment</h3>
+            <p>Kali Linux, Metasploit, Wireshark, Nmap, Burp Suite, vulnerability assessment, and security hardening.</p>
+            <a class="evidence-link" href="projects/ethical-hacking-lab.html">Evidence: authorised lab</a>
           </article>
           <article class="skill-card reveal" data-category="code">
-            <h3>Programming and Scripting</h3>
-            <p>Python, Bash, JavaScript, and C#.</p>
+            <h3>Programming and scripting</h3>
+            <p>Python, Bash, JavaScript, and C#, with serverless automation applied through AWS Lambda workflows.</p>
+            <a class="evidence-link" href="projects/aws-cloud-architecture.html">Evidence: serverless workflows</a>
           </article>
-          <article class="skill-card reveal" data-category="security">
-            <h3>Security Methodologies</h3>
-            <p>Threat intelligence, vulnerability assessment, SOC operations, and technical documentation.</p>
+          <article class="skill-card reveal" data-category="security code">
+            <h3>Technical communication</h3>
+            <p>Architecture decisions, security findings, mitigation guidance, incident procedures, and collaborative project documentation.</p>
+            <a class="evidence-link" href="#experience">Evidence: projects and community work</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section recognition-section" aria-labelledby="recognition-title">
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-inner">
+        <div class="section-heading section-heading-wide reveal">
+          <p class="eyebrow">Experience &amp; community</p>
+          <h2 id="experience-title">Experience beyond the lab.</h2>
+          <p class="section-intro">Work, service, and co-curricular experience that developed reliability, communication, teamwork, and operational discipline.</p>
+        </div>
+
+        <div class="experience-grid">
+          <article class="experience-card reveal">
+            <div class="timeline-meta"><time datetime="2025-05-22">22 May 2025</time></div>
+            <h3>Cyberbullying Awareness Workshop</h3>
+            <p class="item-subtitle">Pathlight School</p>
+            <p>Helped organise and deliver a cybersecurity awareness workshop for students, covering online-safety practices and the dangers of cyberbullying.</p>
+          </article>
+          <article class="experience-card reveal">
+            <div class="timeline-meta"><time datetime="2024">2024</time> - Present</div>
+            <h3>Badminton Recreational Club</h3>
+            <p class="item-subtitle">Ngee Ann Polytechnic</p>
+            <p>Participate in weekly club sessions and inter-school competitions. Won a Bronze Medal while representing the School of ICT in July 2024.</p>
+          </article>
+          <article class="experience-card reveal">
+            <div class="timeline-meta"><time datetime="2024-09">Sep 2024</time> - <time datetime="2024-10">Oct 2024</time></div>
+            <h3>Part-Time Warehouse Assistant</h3>
+            <p class="item-subtitle">ESG Asia Pacific Pte Ltd</p>
+            <p>Supported inventory management and daily operations in a fast-paced environment while strengthening accuracy, teamwork, and process discipline.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education" aria-labelledby="education-title">
       <div class="section-inner two-column">
         <div class="section-heading reveal">
-          <p class="eyebrow">Recognition</p>
-          <h2 id="recognition-title">Achievements and certifications</h2>
+          <p class="eyebrow">Education</p>
+          <h2 id="education-title">Academic foundation.</h2>
+          <p class="section-intro">Cloud Security specialisation within a broader cybersecurity and digital forensics programme.</p>
         </div>
-        <div class="recognition-list reveal">
-          <article>
+
+        <div class="timeline reveal">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta"><time datetime="2024-04">Apr 2024</time> - Present</div>
+              <h3>Ngee Ann Polytechnic</h3>
+              <p class="item-subtitle">Diploma in Cybersecurity and Digital Forensics</p>
+              <ul>
+                <li>Specialising in Cloud Security; current GPA 3.37.</li>
+                <li>Expected to graduate in 2027.</li>
+                <li>Relevant modules include Cybersecurity Operations and Threat Intelligence, Ethical Hacking, Cloud Architecture and Technologies, Cloud Security Tools and Technologies, and Cloud Native Architecture Security.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item timeline-item-compact">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="timeline-meta"><time datetime="2020-01">Jan 2020</time> - <time datetime="2023-12">Dec 2023</time></div>
+              <h3>Whitley Secondary School</h3>
+              <p class="item-subtitle">GCE O Level Certificate</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section recognition-section" id="recognition" aria-labelledby="recognition-title">
+      <div class="section-inner">
+        <div class="section-heading section-heading-wide reveal">
+          <p class="eyebrow">Recognition &amp; learning</p>
+          <h2 id="recognition-title">Verified recognition, clearly labelled.</h2>
+          <p class="section-intro">Awards and community contributions are separated from LinkedIn Learning course certificates.</p>
+        </div>
+
+        <div class="recognition-grid">
+          <article class="recognition-card reveal">
+            <div class="recognition-label">Academic award</div>
             <h3>Nanyang Hwu Clan General Association Polytechnic Scholarship</h3>
-            <p>Nov 2025 - Awarded for outstanding academic performance.</p>
+            <p><time datetime="2025-11">November 2025</time> - Awarded for outstanding academic performance.</p>
           </article>
-          <article>
-            <h3>Pathlight School Cyberbullying Workshop</h3>
-            <p>May 2025 - Recognized for contributing to a cybersecurity awareness workshop for students.</p>
+          <article class="recognition-card reveal">
+            <div class="recognition-label">Co-curricular achievement</div>
+            <h3>Bronze Medal - Inter-School Games</h3>
+            <p><time datetime="2024-07">July 2024</time> - Represented the School of ICT.</p>
           </article>
-          <article>
-            <h3>LinkedIn Learning Certifications</h3>
-            <p>Using Generative AI to Secure the Network, Burp Suite Essential Training, and C#: Applied Data Structures.</p>
+          <article class="recognition-card recognition-card-wide reveal">
+            <div class="recognition-label">LinkedIn Learning course certificates</div>
+            <h3>Continued technical learning</h3>
+            <ul class="certificate-list">
+              <li>Using Generative AI to Secure the Network</li>
+              <li>Burp Suite Essential Training</li>
+              <li>C#: Applied Data Structures (2019)</li>
+            </ul>
+            <a class="evidence-link" href="https://www.linkedin.com/in/ming-jie-aw" target="_blank" rel="noopener noreferrer">View LinkedIn profile</a>
           </article>
         </div>
       </div>
@@ -271,19 +350,29 @@
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="section-inner contact-grid">
         <div class="section-heading reveal">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Open to cybersecurity opportunities and collaborations.</h2>
+          <p class="eyebrow">Start a conversation</p>
+          <h2 id="contact-title">Looking for a cybersecurity intern with practical project experience?</h2>
         </div>
         <div class="contact-actions reveal">
-          <a class="button button-primary" href="mailto:awmj321@gmail.com">awmj321@gmail.com</a>
-          <p>Available for internships, student projects, and security-focused collaboration.</p>
+          <p>I am open to cybersecurity internships, student projects, and security-focused collaborations. Email and LinkedIn are the best ways to reach me.</p>
+          <div class="contact-buttons">
+            <a class="button button-primary" href="mailto:awmj321@gmail.com">Email Aw Ming Jie</a>
+            <a class="button button-secondary" href="https://www.linkedin.com/in/ming-jie-aw" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+            <a class="button button-quiet" href="assets/aw-ming-jie-resume.pdf" download>Download résumé</a>
+          </div>
+          <p class="privacy-note">This portfolio uses no analytics, advertising, or tracking scripts.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span data-year></span> Aw Ming Jie. Built as a responsive cybersecurity portfolio.</p>
+    <p>&copy; <span data-year></span> Aw Ming Jie. Built as an evidence-first cybersecurity portfolio.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="assets/aw-ming-jie-resume.pdf">Résumé</a>
+      <a href=".well-known/security.txt">Security contact</a>
+      <a href="mailto:awmj321@gmail.com">Email</a>
+    </nav>
   </footer>
 
   <script src="script.js"></script>
